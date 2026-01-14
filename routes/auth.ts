@@ -1,9 +1,8 @@
-// src/routes/auth.ts
 import { Router } from "express";
-import bcrypt from "bcryptjs";
+const bcrypt: any = require("bcryptjs");
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
-import { prisma } from "./services/prisma";
+import { prisma } from "../services/prisma";
 import { body, validationResult } from "express-validator";
 
 export const authRouter = Router();

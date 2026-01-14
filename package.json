@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "ts-node server.ts",
     "build": "tsc",
+    "test": "npm run build",
+    "heroku-postbuild": "npm run build",
     "start": "node dist/server.js"
   },
   "dependencies": {
